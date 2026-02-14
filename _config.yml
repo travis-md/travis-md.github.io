@@ -1,5 +1,3 @@
 title: Morgan Travis
 description: Builder. Developer. Prompt Engineer.
-remote_theme: jekyll/minima
-plugins:
-  - jekyll-remote-theme
+theme: minima
