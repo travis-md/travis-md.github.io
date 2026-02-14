@@ -14,7 +14,7 @@ Builder and developer focused on AI agents, prompt engineering, and developer wo
 
 ## Projects
 - [Prompt Library](https://github.com/travis-md/prompt-library) — Organized collection of prompts, agents, and skills
-- [Onfleet GTM Engine](https://github.com/travis-md/onfleet-gtm-engine)
+
 
 ## Contact
 - [GitHub](https://github.com/travis-md)
