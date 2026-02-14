@@ -1,15 +1,7 @@
-# Morgan Travis
+---
+layout: home
+---
 
-Builder. Developer. Prompt Engineer.
+I'm Morgan Travis — a builder working at the intersection of AI, developer tooling, and automation. I work with Go, Rust, Python, and AWS.
 
-## What I'm Working On
-- AI Agents & Prompt Engineering
-- Go, Rust, Python
-- AWS Infrastructure
-- Developer Workflow Automation
-
-## Projects
-- [Prompt Library](https://github.com/travis-md/prompt-library) — Organized collection of prompts, agents, and skills
-
-## Contact
-- [GitHub](https://github.com/travis-md)
+Find me on [GitHub](https://github.com/travis-md) and [LinkedIn](https://linkedin.com/in/yourprofile).
