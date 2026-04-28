@@ -1,5 +1,5 @@
 ---
-title: "What DORA's AI Research Actually Says - And Why Every Support Leader Should Read It"
+title: "What DORA's AI Research Actually Says, and Why Every Support Leader Should Read It"
 date: "2026-02-10"
 description: "Applying the Accelerate/DORA AI Capabilities Model to customer support operations."
 ---

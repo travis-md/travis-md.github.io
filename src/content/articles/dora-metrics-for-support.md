@@ -1,7 +1,7 @@
 ---
-title: "The Four DORA Metrics Nobody Built for Support Teams - Until Now"
+title: "The Four DORA Metrics Nobody Built for Support Teams. Until Now."
 date: "2026-03-18"
-description: "Four performance measures for support teams - a direct translation of the DORA software delivery framework."
+description: "Four performance measures for support teams: a direct translation of the DORA software delivery framework."
 ---
 
 Engineering teams have had a performance measurement framework for over a decade. DORA metrics came out of years of research across thousands of teams and gave engineering leaders something concrete: four numbers that tell you whether your delivery operation is elite or struggling, and why.
