@@ -26,7 +26,7 @@ That information doesn't automatically flow upward. It lives in the heads of you
 
 AI can handle the ticket. It cannot hold the pattern.
 
-A senior support agent who has talked to three hundred enterprise customers knows things about your product-market fit that your product team doesn't. They know which onboarding steps create silent churn. They know which competitor keeps coming up in frustrated conversations. They know which customers are one bad interaction away from leaving. That knowledge is irreplaceable - and most organizations are leaving it completely untapped.
+A senior support agent who has talked to three hundred enterprise customers knows things about your product-market fit that your product team doesn't. They know which onboarding steps create silent churn. They know which competitor keeps coming up in frustrated conversations. They know which customers are one bad interaction away from leaving. That knowledge is irreplaceable, and most organizations are leaving it completely untapped.
 
 ---
 
@@ -34,7 +34,7 @@ A senior support agent who has talked to three hundred enterprise customers know
 
 In every high-performing organization I've studied and worked in, the functions closest to the customer are the ones that generate the best signal about what's actually happening in the market. Not surveys. Not analyst reports. Not NPS scores. The unfiltered, real-time feedback that comes from someone calling in because something is wrong.
 
-DORA's 2025 research makes this concrete: user-centric focus - a genuine organizational orientation toward customer outcomes - predicts a 40% improvement in organizational performance. And critically, it's the single capability that determines whether AI adoption helps or hurts. Teams with strong user-centric focus that adopt AI see performance increase. Teams without it see performance decrease.
+DORA's 2025 research makes this concrete: user-centric focus, a genuine organizational orientation toward customer outcomes, predicts a 40% improvement in organizational performance. And critically, it's the single capability that determines whether AI adoption helps or hurts. Teams with strong user-centric focus that adopt AI see performance increase. Teams without it see performance decrease.
 
 Who holds user-centric focus in your organization? Your support team. They are the ones in daily contact with users. They are the proxies for what users actually experience. If you reduce their headcount, automate their judgment, and eliminate their institutional knowledge - you don't just lose support capability. You lose your organization's connection to the customer.
 
