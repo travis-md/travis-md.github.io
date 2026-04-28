@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft))
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+function fmtDate(d: string) {
+  return new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+---
+<Base title="Morgan Travis">
+  <div class="bio-block">
+    <p>I build engineering-grade operating systems for customer-facing teams.</p>
+    <p>Former Senior Manager at AWS. I apply DevOps and lean rigor to support operations: measurement frameworks, coaching infrastructure, AI that gets deployed after the foundation is ready. You have stumbled onto a place where I write about that work.</p>
+  </div>
+
+  <div class="section-heading">Recent Writing</div>
+  <ul class="article-list">
+    {articles.map(article => (
+      <li>
+        <a href={`/articles/${article.id}`}>{article.data.title}</a>
+        <hr class="item-divider" />
+        <span class="date">{fmtDate(article.data.date)}</span>
+      </li>
+    ))}
+  </ul>
+</Base>

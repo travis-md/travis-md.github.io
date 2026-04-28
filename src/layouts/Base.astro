@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = "Morgan Travis - Support Operations" } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <a class="name" href="/">Morgan Travis</a>
+      <div class="nav-links">
+        <a href="/articles">Writing</a>
+        <a href="/about">About</a>
+        <a href="https://www.linkedin.com/in/morgandtravis/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/travis-md" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="tagline">Head in the Cloud. Always building something. Obsessed with customers, DevOps, &amp; growing great teams.</div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    Morgan Travis &middot; <a href="mailto:morgandtravis@gmail.com">morgandtravis@gmail.com</a> &middot; <a href="https://www.linkedin.com/in/morgandtravis/" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="https://github.com/travis-md" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+</body>
+</html>

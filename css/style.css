@@ -1,0 +1,444 @@
+/* =============================================
+   Morgan Travis — Personal Content Site
+   ============================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #6b7280;
+  --color-rule: #e5e7eb;
+  --color-accent: #1a56db;
+  --color-link: #1a56db;
+  --font-body: Georgia, 'Times New Roman', serif;
+  --font-ui: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Mono', 'Consolas', monospace;
+  --max-width: 680px;
+  --line-height: 1.75;
+}
+
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: var(--line-height);
+  padding: 0 1.5rem;
+}
+
+/* =============================================
+   Layout
+   ============================================= */
+
+.site-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+}
+
+/* =============================================
+   Navigation
+   ============================================= */
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+
+.site-nav .site-name {
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.site-nav .nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.site-nav .nav-links a {
+  color: var(--color-muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-nav .nav-links a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+/* =============================================
+   Rules
+   ============================================= */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-rule);
+  margin: 2rem 0;
+}
+
+/* =============================================
+   Home — Bio section
+   ============================================= */
+
+.bio {
+  margin: 2rem 0;
+  font-family: var(--font-ui);
+}
+
+.bio p {
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* =============================================
+   Home — Article list
+   ============================================= */
+
+.section-heading {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 1.25rem;
+}
+
+.article-list {
+  list-style: none;
+}
+
+.article-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.article-list li:first-child {
+  border-top: 1px solid var(--color-rule);
+}
+
+.article-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 0.1rem;
+}
+
+.article-list a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.article-list a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* =============================================
+   Footer
+   ============================================= */
+
+.site-footer {
+  margin-top: 3rem;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.site-footer a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* =============================================
+   About page
+   ============================================= */
+
+.about-hero h1 {
+  font-family: var(--font-ui);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+}
+
+.about-hero .tagline {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  color: var(--color-muted);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.about-body {
+  font-family: var(--font-ui);
+}
+
+.about-body p {
+  margin-bottom: 1.2rem;
+  font-size: 0.97rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.about-body p:last-child {
+  margin-bottom: 0;
+}
+
+.about-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin: 1.5rem 0;
+}
+
+.stat {
+  font-family: var(--font-ui);
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-top: 0.15rem;
+}
+
+.about-links {
+  display: flex;
+  gap: 1.25rem;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+}
+
+.about-links a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.about-links a:hover {
+  text-decoration: underline;
+}
+
+/* =============================================
+   Article pages
+   ============================================= */
+
+.article-header {
+  margin-bottom: 2rem;
+}
+
+.article-header h1 {
+  font-family: var(--font-ui);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.article-meta {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  display: flex;
+  gap: 1.25rem;
+}
+
+.article-body {
+  font-size: 1rem;
+  line-height: var(--line-height);
+}
+
+.article-body p {
+  margin-bottom: 1.3rem;
+}
+
+.article-body h2 {
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.article-body h3 {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.article-body strong {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.article-body em {
+  font-style: italic;
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.article-body li {
+  margin-bottom: 0.4rem;
+}
+
+.article-body blockquote {
+  border-left: 3px solid var(--color-rule);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.article-body a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+.article-body a:hover {
+  color: var(--color-accent);
+}
+
+/* Self-assessment table */
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  margin: 1.5rem 0;
+}
+
+.article-body th {
+  text-align: left;
+  border-bottom: 2px solid var(--color-rule);
+  padding: 0.4rem 0.75rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.article-body td {
+  border-bottom: 1px solid var(--color-rule);
+  padding: 0.5rem 0.75rem;
+}
+
+.article-byline {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  font-style: italic;
+  margin-bottom: 0.4rem;
+}
+
+.back-link {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.back-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* Part label */
+.part-label {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* =============================================
+   Responsive
+   ============================================= */
+
+@media (max-width: 640px) {
+  html {
+    font-size: 17px;
+  }
+
+  .article-list li {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .about-numbers {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .article-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .article-meta {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

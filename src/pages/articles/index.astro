@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft))
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+function fmtDate(d: string) {
+  return new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+---
+<Base title="Writing - Morgan Travis">
+  <h1>Writing</h1>
+  <p style="font-size: 14px; color: #666; margin: 8px 0 32px; font-family: Arial, Helvetica, sans-serif;">Support Operations. Applying DevOps rigor to customer-facing teams.</p>
+  <ul class="article-list">
+    {articles.map(article => (
+      <li>
+        <a href={`/articles/${article.id}`}>{article.data.title}</a>
+        <hr class="item-divider" />
+        <span class="date">{fmtDate(article.data.date)}</span>
+      </li>
+    ))}
+  </ul>
+</Base>
